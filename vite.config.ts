@@ -6,5 +6,11 @@ export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
+    include: ['tweetnacl'],
+  },
+  resolve: {
+    alias: {
+      tweetnacl: 'tweetnacl',
+    },
   },
 });
