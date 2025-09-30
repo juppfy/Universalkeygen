@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inconsolata', monospace;
+}
+
+input[type="range"].slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"].slider::-webkit-slider-track {
+  background: #27272a;
+  height: 0.5rem;
+}
+
+input[type="range"].slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #22c55e;
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-top: -0.375rem;
+}
+
+input[type="range"].slider::-moz-range-track {
+  background: #27272a;
+  height: 0.5rem;
+}
+
+input[type="range"].slider::-moz-range-thumb {
+  background: #22c55e;
+  height: 1.25rem;
+  width: 1.25rem;
+  border: none;
+  border-radius: 0;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #18181b;
+  border: 1px solid #27272a;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #22c55e;
+  border-color: #22c55e;
+}
+
+input[type="checkbox"]:checked::before {
+  content: '✓';
+  display: block;
+  text-align: center;
+  color: black;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
